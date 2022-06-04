@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background-color: lightcyan;
+        }
+
+        .container {
+            max-width: 38rem;
+            padding: 500px;
+            box-shadow: 0 40px 90px rgba(0, 0, 0, .3);
+            overflow: hidden;
+            color: #000;
+            border-radius: 13px;
+            margin: auto;
+            margin-top: 6rem;
+            margin-bottom: 2rem;
+        }
+
+        body,
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #inputcoy {
+            width: 100%;
+            height: 3.4rem;
+            border-radius: 10px;
+            margin-left: 2rem;
+            border: 1px solid grey;
+            font-size: 1.rem;
+            padding-left: 1.9rem;
+        }
+
+        #btn {
+            width: 11rem;
+            height: 3.4rem;
+            color: white;
+            border-radius: 11px;
+            font-size: 1.3rem;
+            background-color: #218c74;
+            border: grey;
+            margin-left: 1rem;
+            margin-right: 0rem;
+        }
+
+        #footer {
+            padding-left: 170px;
+            padding-right: 170px;
+            padding-top: 0px;
+            padding-bottom: 0;
+            opacity: 50%;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="padding: 0rem;">
+        <div class="row"
+            style="background-color:#82ccdd; border-radius: 10px 10px 0 0; padding: 1rem; padding-bottom: 1.5rem;">
+            <div class=" col-12">
+                <h1 style="color: white;">The closest thing you'll ever get to someone emailing you money.</h1>
+            </div>
+        </div>
+        <div class="row"
+            style="background-color: white; padding: 1rem; border-radius: 0 0 10px 10px; padding-bottom: 1rem;">
+            <div class="col-12"
+                style="font-family: 'Montserrat', sans-serif; padding-left: 4rem; padding-right: 4rem; font-size: large;">
+                <p>Get weekly emails containing all my branding and design secrets to help you 3x your sales.</p>
+            </div>
+            <div class="col-7" style="padding-top: 1rem;">
+                <input class="form-control" id="inputcoy" placeholder="Your Email Address" />
+            </div>
+            <div class="col-5">
+                <button type="submit" id="btn" onclick="submitEmail()">
+                    Push, Don't Pull.
+                </button>
+            </div>
+            <div class="row">
+                <div class="col-12" id="footer">
+                    <p>
+                        Zero spam. Unsubscribe at any time
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
